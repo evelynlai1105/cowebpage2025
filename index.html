@@ -188,6 +188,41 @@
             margin-top: 0;
             color: #0059b3;
         }
+
+        @media (max-width: 768px) {
+            .hero-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero-section img {
+                max-width: 100%;
+                margin-bottom: 1.5rem;
+            }
+            .hero-section .content {
+                max-width: 100%;
+                text-align: center;
+            }
+            .feature {
+                flex: 1 1 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav a {
+                margin: 0 0.5rem;
+                font-size: 0.9rem;
+            }
+            .hero-section .content h1 {
+                font-size: 1.5rem;
+            }
+            .hero-section .content p {
+                font-size: 1rem;
+            }
+            .cta {
+                padding: 1rem;
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -211,7 +246,7 @@
                 <a href="#platform">瞭解更多</a>
                 <a href="#video" class="secondary">介紹影片</a>
             </div>
-            <img src="hero-image-1.png" alt="Decanter AI 平台示意圖">
+            <img src="hero-image-1.png" alt="AI 平台示意圖">
         </section>
         <section id="about">
             <h2>關於宏策智能</h2>
